@@ -1,5 +1,5 @@
 angular
-    .module("test", ["pageslide-directive", "ui.router"])
+    .module("test", ["dndLists", "ui.router"])
     .config(config);
 
 function config($stateProvider, $urlRouterProvider){
@@ -9,6 +9,6 @@ function config($stateProvider, $urlRouterProvider){
         .state('home', {
             url: '/',
             controller: 'HomeController',
-            templateUrl: 'app/views/home.html'
+            templateUrl: 'app/views/multi-frame.html'
         });
 }
