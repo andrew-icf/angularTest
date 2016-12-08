@@ -1,12 +1,12 @@
 angular
     .module('test')
-    .controller('HomeController', HomeController);
+    .controller('DndController', DndController);
 
-function HomeController($scope){
+function DndController($scope){
 
     $scope.models = [
-        {listName: "A", items: [], dragging: false},
-        {listName: "B", items: [], dragging: false}
+        {listName: "Hi", items: [], dragging: false},
+        {listName: "Bye", items: [], dragging: false}
     ];
 
     /**

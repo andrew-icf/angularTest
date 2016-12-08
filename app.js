@@ -1,14 +1,19 @@
 angular
-    .module("test", ["dndLists", "ui.router"])
+    .module("test", ["dndLists", "ui.router", "pageslide-directive"])
     .config(config);
 
 function config($stateProvider, $urlRouterProvider){
     $urlRouterProvider.otherwise('/');
 
     $stateProvider
-        .state('home', {
+        .state('multi', {
             url: '/',
-            controller: 'HomeController',
-            templateUrl: 'app/views/multi-frame.html'
+            controller: 'DndController',
+            templateUrl: 'app/views/dragNdrop.html'
         });
+        // .state('pageSlide', {
+        //    url: '/',
+        //     controller: 'PageSlideController',
+        //     templateUrl: 'app/views/pageSlide.html'
+        // });
 }
