@@ -6,14 +6,14 @@ function config($stateProvider, $urlRouterProvider){
     $urlRouterProvider.otherwise('/');
 
     $stateProvider
-        // .state('multi', {
-        //     url: '/',
-        //     controller: 'DndController',
-        //     templateUrl: 'app/views/dragNdrop.html'
-        // });
-        .state('pageSlide', {
-           url: '/',
-            controller: 'PageSlideController',
-            templateUrl: 'app/views/pageSlide.html'
+        .state('multi', {
+            url: '/',
+            controller: 'DndController',
+            templateUrl: 'app/views/dragNdrop.html'
         });
+//         .state('pageSlide', {
+//            url: '/',
+//             controller: 'PageSlideController',
+//             templateUrl: 'app/views/pageSlide.html'
+//         });
 }
